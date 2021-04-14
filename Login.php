@@ -53,6 +53,7 @@ if(isset($_POST["Submit"])){
 
 <link rel="stylesheet" href="css/adminstyles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 
 </head>
 <style>
@@ -73,7 +74,7 @@ if(isset($_POST["Submit"])){
 
 
 body{
-    background-color:#042C30;
+    background-image: url("https://i.pinimg.com/564x/9f/9f/e6/9f9fe69eebcd03462913b049c3082767.jpg");
 }
 
 .col-sm-10{
@@ -106,11 +107,25 @@ footer{
 .main-heading{
     color: #cfdac8;
 }
+.navbar-heading {
+        font-family: 'Train One', cursive;
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 150px #0ff;
 
+    }
 
 </style>
 <body>
-<div style="height:10px; background-color:#27aae1"></div>
+<div style="height:1px; background-color:paleturquoise"></div>
    <nav class="navbar navbar-inverse" role="navigation">
    <div class="container">
    <div class="navbar-header">
@@ -121,16 +136,29 @@ footer{
    <span class="icon-bar"></span>
    </button>
    <a class="navbar-brand" href="blog.php">
-   <img style="margin-top:-11px" src="images/logo.png" width="200" height="40">
+   <p class="navbar-heading">MY Blog</p>
    </a>
    </div>
    <div class="collapse navbar-collapse" id="collapse">
-   
-  
+   <ul class="nav navbar-nav">
+   <li><a href="#">Home</a></li>
+   <li class="active"><a href="#blog.php?page=1">Blog</a></li>
+   <li><a href="#">About Us</a></li>
+   <li><a href="#">Sevices</a></li>
+   <li><a href="#">Contact Us</a></li>
+   <li><a href="#">Features</a></li>
+   </ul>
+   <form action="blog.php" class="navbar-form navbar-right">
+   <div class="form-group">
+   <input type="text" class="form-control" placeholder="Search" name="Search">
+   </div>
+   <button class="btn btn-default" name="searchButton">Go</button>
+   </form>
    </div>
    </div>
    </nav>
-   <div class="line" style="height:10px; background-color:#27aae1"></div>
+   <div class="line" style="height:2px; background-color:paleturquoise"></div>
+
 
 
 

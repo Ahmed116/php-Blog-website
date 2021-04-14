@@ -90,7 +90,7 @@ if (isset($_POST["Submit"])) {
 
 
 body {
-    background-color: #042C30;
+    background-image: url("https://i.pinimg.com/564x/9f/9f/e6/9f9fe69eebcd03462913b049c3082767.jpg");
 }
 
 .col-sm-10 {
@@ -155,6 +155,9 @@ body {
     content: attr(data-hover);
 
 }
+footer{
+    background-image: url("https://i.pinimg.com/564x/9f/9f/e6/9f9fe69eebcd03462913b049c3082767.jpg");
+}
 </style>
 
 <body>
@@ -175,7 +178,7 @@ body {
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#blog.php?page=1">Blog</a></li>
+                    <li class="active"><a href="blog.php?page=1">Blog</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Sevices</a></li>
                     <li><a href="#">Contact Us</a></li>
