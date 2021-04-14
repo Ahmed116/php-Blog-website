@@ -61,6 +61,8 @@ if (isset($_POST["Submit"])) {
 
 <link rel="stylesheet" href="css/publicstyles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
 <style>
 
 
@@ -102,12 +104,30 @@ if (isset($_POST["Submit"])) {
     background-color: #f6f7f9;
 }
 
+.navbar-heading {
+        font-family: 'Train One', cursive;
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 150px #0ff;
 
+    }
+
+footer{
+    background-image: url("https://i.pinimg.com/564x/9f/9f/e6/9f9fe69eebcd03462913b049c3082767.jpg");
+}
 
 </style>
 </head>
 <body>
-   <div style="height:10px; background-color:#27aae1"></div>
+<div style="height:1px; background-color:paleturquoise"></div>
    <nav class="navbar navbar-inverse" role="navigation">
    <div class="container">
    <div class="navbar-header">
@@ -118,13 +138,13 @@ if (isset($_POST["Submit"])) {
    <span class="icon-bar"></span>
    </button>
    <a class="navbar-brand" href="blog.php">
-   <img style="margin-top:-11px" src="images/logo.png" width="200" height="40">
+   <p class="navbar-heading">MY Blog</p>
    </a>
    </div>
    <div class="collapse navbar-collapse" id="collapse">
    <ul class="nav navbar-nav">
    <li><a href="#">Home</a></li>
-   <li class="active"><a href="#blog.php?page=1">Blog</a></li>
+   <li class="active"><a href="blog.php?page=1">Blog</a></li>
    <li><a href="#">About Us</a></li>
    <li><a href="#">Sevices</a></li>
    <li><a href="#">Contact Us</a></li>
@@ -139,7 +159,7 @@ if (isset($_POST["Submit"])) {
    </div>
    </div>
    </nav>
-   <div class="line" style="height:10px; background-color:#27aae1"></div>
+   <div class="line" style="height:2px; background-color:paleturquoise"></div>
 
 <div class="container" style="min-height: calc(100vh - 4rem - 4rem);"><!--Container-->
 <div class="blog-header">
@@ -296,14 +316,53 @@ while ($DataRows = mysqli_fetch_array($Execute)) {
 </div><!-- end of Container -->
 
 
-<footer id="footer" style="padding:10px;
-    background-color: #39333b;
-    border-top: 1px solid black;
-    color: #eeeeee;
-    text-align: center;">
-<hr><p>  | Ahmed Hilles | &copy;2021 ---- All rights reserved</p>
+  <!-- Footer -->
+  <footer class="page-footer font-small cyan darken-3">
+
+<!-- Footer Elements -->
+<div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/ahmed.helles.7" class="fb-ic" style="margin:20px">
+                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+
+                <!--Linkedin -->
+                <a href="https://www.linkedin.com/in/ahmed-hilles-3495961b5/" class="li-ic" style="margin:20px">
+                    <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+
+                <!--Github-->
+                <a href="https://github.com/Ahmed116" class="pin-ic" style="margin:20px">
+                    <i class="fab fa-github fa-lg white-text fa-2x"> </i>
+                </a>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+</div>
+<!-- Footer Elements -->
+<br>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://github.com/Ahmed116"> Ahmed Hilles</a>
+</div>
+<!-- Copyright -->
+
 </footer>
-     <div style="height:5px; background:#27aae1"></div>
+<!-- Footer -->
+
 
 </body>
 </html>

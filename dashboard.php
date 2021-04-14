@@ -123,6 +123,8 @@ footer{
    <div class="line" style="height:2px; background-color:paleturquoise"></div>
 
     <div class="container-fluid" style="min-height: calc(100vh - 4rem - 4rem);">
+
+    
     <div class="row">
 
 
