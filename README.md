@@ -1,4 +1,4 @@
-                                         >> My Bog << 
+                                            >> My Bog << 
 
  My Blog is a website allow everyone share his Blogs in it , it's also allow other peaple to share them thoughts about the blog they read by Comments .
 
