@@ -7,6 +7,7 @@ function Redirect_to($New_Location) {
     header("Location:".$New_Location);
     exit();
 }
+    
 
 function Login_Attempt($Username, $Password){
     $Query ="SELECT * FROM registration WHERE 

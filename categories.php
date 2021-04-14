@@ -56,6 +56,7 @@ if (isset($_POST["Submit"])) {
 
 <link rel="stylesheet" href="css/adminstyles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 
 </head>
 <style>
@@ -97,18 +98,90 @@ color:#c1c78f ;
     font-weight: bold;
     display: block;
 }
+.navbar-heading{
+    font-family: 'Train One', cursive;
+    font-size:3.5rem;
+    color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 
-footer{
-    padding:10px;
-    background-color: #39333b;
-    border-top: 1px solid black;
-    color: #eeeeee;
-    text-align: center;
+}
+.blog-header{
+    font-family:'Ultra', serif;
+    font-weight: bold;
 
 }
 
+.blog-header h1{
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+
+}
+
+.test:hover {
+  font-size: 0;
+}
+
+.test:hover:before {
+  font-size: 35px;
+  content: attr(data-hover);
+
+}
+
+
+
+
 </style>
 <body>
+<div style="height:1px; background-color:paleturquoise"></div>
+   <nav class="navbar navbar-inverse" role="navigation">
+   <div class="container">
+   <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+   <span class="sr-only">Toggle Navigation</span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="blog.php">
+   <p class="navbar-heading">MY Blog</p>
+   </a>
+   </div>
+   <div class="collapse navbar-collapse" id="collapse">
+   <ul class="nav navbar-nav">
+   <li><a href="#">Home</a></li>
+   <li class="active"><a href="#blog.php?page=1">Blog</a></li>
+   <li><a href="#">About Us</a></li>
+   <li><a href="#">Sevices</a></li>
+   <li><a href="#">Contact Us</a></li>
+   <li><a href="#">Features</a></li>
+   </ul>
+   <form action="blog.php" class="navbar-form navbar-right">
+   <div class="form-group">
+   <input type="text" class="form-control" placeholder="Search" name="Search">
+   </div>
+   <button class="btn btn-default" name="searchButton">Go</button>
+   </form>
+   </div>
+   </div>
+   </nav>
+   <div class="line" style="height:2px; background-color:paleturquoise"></div>
+
+
+
+
+
     <div class="container-fluid" style="min-height: calc(100vh - 4rem - 4rem);">
     <div class="row">
 
@@ -186,9 +259,54 @@ while ($DataRows = mysqli_fetch_array($Execute)) {
     </div><!--End of Row-->
      </div><!--End of Container Fluid-->
 
-     <footer id="footer">
-    <hr><p>  | Ahmed Hilles | &copy;2021 ---- All rights reserved</p>
-     </footer>
-     <div style="height:5px; background:#27aae1"></div>
+         <!-- Footer -->
+  <footer class="page-footer font-small cyan darken-3">
+
+<!-- Footer Elements -->
+<div class="container">
+
+  <!-- Grid row-->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 py-5" >
+      <div class="mb-5 flex-center">
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/ahmed.helles.7" class="fb-ic" style="margin:20px">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+
+        <!--Linkedin -->
+        <a href="https://www.linkedin.com/in/ahmed-hilles-3495961b5/" class="li-ic" style="margin:20px">
+          <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+
+        <!--Github-->
+        <a href="https://github.com/Ahmed116" class="pin-ic" style="margin:20px">
+          <i class="fab fa-github fa-lg white-text fa-2x"> </i>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row-->
+
+</div>
+<!-- Footer Elements -->
+<br>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2021 Copyright:
+  <a href="https://github.com/Ahmed116"> Ahmed Hilles</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
 </body>
 </html>

@@ -36,36 +36,28 @@ require_once "include/DB.php";
     font-size:1.1em;
 }
 body{
-    background-color:#042C30;
+    background-image: url("https://i.pinimg.com/564x/9f/9f/e6/9f9fe69eebcd03462913b049c3082767.jpg");
 }
 
 .col-sm-10{
     background-color:#cfdac8;
 }
 #side-menu a{
-color:#c1c78f ;
+color:#c1c78f;
 }
 
 #side-menu .active a{
     color: antiquewhite;
-    background-color:#78c5b6;
+    background-color:royalblue;
     font-weight:bold;
 }
 #side-menu a:hover{
     color: #ffffff;
-    background-color: #78c5b6;
+    background-color: royalblue;
     font-weight: bold;
     display: block;
 }
 
-footer{
-    padding:10px;
-    background-color: #39333b;
-    border-top: 1px solid black;
-    color: #eeeeee;
-    text-align: center;
-
-}
 
 .navbar-heading{
     font-family: 'Train One', cursive;
@@ -88,6 +80,9 @@ footer{
 
 }
 
+footer{
+   background-image: url("https://i.pinimg.com/564x/9f/9f/e6/9f9fe69eebcd03462913b049c3082767.jpg");
+}
 
 </style>
 
@@ -110,7 +105,7 @@ footer{
    <div class="collapse navbar-collapse" id="collapse">
    <ul class="nav navbar-nav">
    <li><a href="#">Home</a></li>
-   <li class="active"><a href="#blog.php?page=1">Blog</a></li>
+   <li class="active"><a href="blog.php?page=1">Blog</a></li>
    <li><a href="#">About Us</a></li>
    <li><a href="#">Sevices</a></li>
    <li><a href="#">Contact Us</a></li>
@@ -261,9 +256,57 @@ $QueryUNApproved = "SELECT COUNT(*) FROM comments WHERE admin_panal_id='$ID' AND
     </div><!--End of Row-->
      </div><!--End of Container Fluid-->
 
-     <footer id="footer">
-    <hr><p>  | Ahmed Hilles | &copy;2021 ---- All rights reserved</p>
-     </footer>
-     <div style="height:5px; background:#27aae1"></div>
+   
+     
+     <!-- Footer -->
+<footer class="page-footer font-small cyan darken-3" ">
+
+<!-- Footer Elements -->
+<div class="container">
+
+  <!-- Grid row-->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 py-5" >
+      <div class="mb-5 flex-center">
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/ahmed.helles.7" class="fb-ic" style="margin:20px">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+       
+        <!--Linkedin -->
+        <a href="https://www.linkedin.com/in/ahmed-hilles-3495961b5/" class="li-ic" style="margin:20px">
+          <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+       
+        <!--Github-->
+        <a href="https://github.com/Ahmed116" class="pin-ic" style="margin:20px">
+          <i class="fab fa-github fa-lg white-text fa-2x"> </i>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row-->
+
+</div>
+<!-- Footer Elements -->
+<br>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2021 Copyright:
+  <a href="https://github.com/Ahmed116"> Ahmed Hilles</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
 </body>
 </html>
